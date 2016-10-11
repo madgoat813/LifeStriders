@@ -6,21 +6,18 @@ $(document).ready(function (e) {
 
      $('#printPreviewPhysicianFormOVER').hide();
 
-     $('#printPreviewButton').click(function (e) {
-          var formfield = [$('#clientName').val(),$('#birthDate').val(),$('#address').val(),$('#phone').val(),$('#medDiag').val(),
-          $('#preCon').val(),$('#addCom').val(),$('#physName').val(),$('#physPhone').val(),$('#physAddress').val(),$('#physSig').val(),$('#todayDate').val()];
+     $('#printPreviewButton').click(function () {
+          var formfield = ["Client Name: " + $('#clientName').val(),"Birth Date: " + $('#birthDate').val(),"Address: " + $('#address').val(),
+          "Phone: " + $('#phone').val(),"Medical Diagnosis/Description of Disability: " + $('#medDiag').val(),
+          "Precautions/Contraindications: " + $('#preCon').val(),"Additional Comments: " + $('#addCom').val(),
+          "Physician's Name: " + $('#physName').val(),"Physician's Phone: " + $('#physPhone').val(),"Physician's Address: " + $('#physAddress').val(),
+          "Physician's Signature: " + $('#physSig').val(),"Todays Date: " + $('#todayDate').val()];
           
           //This is not ideal, however I am begining to automate the process of creating the print preview screen
-          var displayindex = ["Client Name: " + formfield[0],"Birth Date: " + formfield[1],"Address: " + formfield[2],"Phone: " + formfield[3],
-          "Medical Diagnosis/Description of Disability: " + formfield[4],
-          "Precautions/Contraindications: " + formfield[5], "Additional Comments: " + formfield[6],"Physician's Name: " + formfield[7],
-          "Physician's Phone: " + formfield[8],"Physician's Address: " + formfield[9],
-          "Physician's Signature: " + formfield[10],"Todays Date: " + formfield[11]];
           var printindex = ['#CN','#BD','#AD','#PH','#MD','#PC','#AC','#PN','#PP','#PD','#PS','#TD'];
-          var mainindex = [0,1,2,3,4,5,6,7,8,9,10,11];
           
-          for(i = 0;i<mainindex.length;i++){
-               $(printindex[i]).html(displayindex[i]);
+          for(i = 0;i<formfield.length;i++){
+               $(printindex[i]).html(formfield[i]);
           }
           
           $('#printPreviewPhysicianFormOVER').show();
