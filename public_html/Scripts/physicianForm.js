@@ -7,32 +7,21 @@ $(document).ready(function (e) {
      $('#printPreviewPhysicianFormOVER').hide();
 
      $('#printPreviewButton').click(function (e) {
-          var clientName = $('#clientName').val();
-          var birthDate = $('#birthDate').val();
-          var address = $('#address').val();
-          var phone = $('#phone').val();
-          var medDiag = $('#medDiag').val();
-          var preCon = $('#preCon').val();
-          var addCom = $('#addCom').val();
-          var physName = $('#physName').val();
-          var physPhone = $('#physPhone').val();
-          var physAddress = $('#physAddress').val();
-          var physSig = $('#physSig').val();
-          var todayDate = $('#todayDate').val();
+          var formfield = [$('#clientName').val(),$('#birthDate').val(),$('#address').val(),$('#phone').val(),$('#medDiag').val(),
+          $('#preCon').val(),$('#addCom').val(),$('#physName').val(),$('#physPhone').val(),$('#physAddress').val(),$('#physSig').val(),$('#todayDate').val()];
           
+          //This is not ideal, however I am begining to automate the process of creating the print preview screen
+          var displayindex = ["Client Name: " + formfield[0],"Birth Date: " + formfield[1],"Address: " + formfield[2],"Phone: " + formfield[3],
+          "Medical Diagnosis/Description of Disability: " + formfield[4],
+          "Precautions/Contraindications: " + formfield[5], "Additional Comments: " + formfield[6],"Physician's Name: " + formfield[7],
+          "Physician's Phone: " + formfield[8],"Physician's Address: " + formfield[9],
+          "Physician's Signature: " + formfield[10],"Todays Date: " + formfield[11]];
+          var printindex = ['#CN','#BD','#AD','#PH','#MD','#PC','#AC','#PN','#PP','#PD','#PS','#TD'];
+          var mainindex = [0,1,2,3,4,5,6,7,8,9,10,11];
           
-          $('#printPreviewCN').html("Client Name: " + clientName);
-          $('#printPreviewBD').html("Birth Date: " + birthDate);
-          $('#printPreviewAD').html("Address: " + address);
-          $('#printPreviewPH').html("Phone: " + phone);
-          $('#printPreviewMD').html("Medical Diagnosis/Description of Disability: " + medDiag);
-          $('#printPreviewPC').html("Precautions/Contraindications: " + preCon);
-          $('#printPreviewAC').html("Additional Comments: " + addCom);
-          $('#printPreviewPN').html("Physician's Name: " + physName);
-          $('#printPreviewPP').html("Physician's Phone: " + physPhone);
-          $('#printPreviewPD').html("Physician's Address: " + physAddress);
-          $('#printPreviewPS').html("Physician's Signature: " + physSig);
-          $('#printPreviewTD').html("Todays Date: " + todayDate);
+          for(i = 0;i<mainindex.length;i++){
+               $(printindex[i]).html(displayindex[i]);
+          }
           
           $('#printPreviewPhysicianFormOVER').show();
           $('#formPhysicianForm').hide();
