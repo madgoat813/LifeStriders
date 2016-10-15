@@ -10,50 +10,60 @@ $(document).ready(function (e) {
 
     $('#printPreviewButton').click(function (e) {
 
+        $('#printPreviewTD').html($('#todayDate').val());
+        $('#printPreviewFN').html($('#firstName').val());
+        $('#printPreviewLN').html($('#lastName').val());
+        $('#printPreviewBD').html($('#birthDate').val());
+        $('#printPreviewSX').html($('#sex').val());
+        $('#printPreviewMS').html($('#marital').val());
 
-        var todayDate = $('#todayDate').val();
-        var firstName = $('#firstName').val();
-        var lastName = $('#lastName').val();
-        var birthDate = $('#birthDate').val();
-        var gender = $('#sex').val();
-        var marStatus = $('#marital').val();
+        $('#pAddress').html($('#cAddress').val());
+        $('#pCity').html($('#cCity').val());
+        $('#pState').html($('#cState').val());
+        $('#pZipCode').html($('#cZipCode').val());
 
-        var address = $('#cAddress').val();
-        var city = $('#cCity').val();
-        var state = $('#cState').val();
-        var zipCode = $('#cZipCode').val();
+        $('#pHomePhone').html($('#homePhone').val());
+        $('#pMyEmail').html($('#myEmail').val());
+        $('#pWorkPhone').html($('#workPhone').val());
+        $('#pCellPhone').html($('#cellPhone').val());
 
-        var homePhone = $('#homePhone').val();
-        var myEmail = $('#myEmail').val();
-        var workPhone = $('#workPhone').val();
-        var cellPhone = $('#cellPhone').val();
+        $('#pEmployersName').html($('#employerName').val());
+        $('#pSocSecNum').html($('#socSecNum').val());
+
+        $('#pParentName').html($('#parentName').val());
+        $('#pHisHerDOB').html($('#hisherDOB').val());
+        $('#pHisHerSSN').html($('#hisherSSN').val());
+
+        $('#pEmerCon').html($('#emerCon').val());
+        $('#pEmerRel').html($('#emerRelation').val());
+        $('#pEmerPhone').html($('#emerPhone').val());
+
+        $('#pHearAbout').html($('#hearAbout').val());
+
+        $('#pAllegMed').html($('#allegMed').val());
+
+        $('#pCurrentCare').html($('#currentCare').val());
+        $('#pCurrentName').html($('#currentName').val());
+        $('#pCurrentDateSeen').html($('#currentDateSeen').val());
+        $('#pCurrentProblem').html($('#currentProblem').val());
+
+        $('#pMedDocName').html($('#medDoctorName').val());
+        $('#pMedDocPhone').html($('#medDocPhone').val());
+        $('#pMedDocDate').html($('#medDocDate').val());
         
-        var employerName = $('#employerName').val();
-        var socSecNum = $('#socSecNum').val();
+        $('#pSigMedProb').html($('#sigMedProb').val());
 
-
-//--------------------------------------------------------
-
-
-        $('#printPreviewTD').html(todayDate);
-        $('#printPreviewFN').html(firstName);
-        $('#printPreviewLN').html(lastName);
-        $('#printPreviewBD').html(birthDate);
-        $('#printPreviewSX').html(gender);
-        $('#printPreviewMS').html(marStatus);
-
-        $('#pAddress').html(address);
-        $('#pCity').html(city);
-        $('#pState').html(state);
-        $('#pZipCode').html(zipCode);
-
-        $('#pHomePhone').html(homePhone);
-        $('#pMyEmail').html(myEmail);
-        $('#pWorkPhone').html(workPhone);
-         $('#pCellPhone').html(cellPhone);
-         
-         $('#pEmployersName').html(employerName).val();
-         $('#pSocSecNum').html(socSecNum).val();
+        $('#pPastSurg').html($('#pastSurg').val());
+        
+        $('#pPastAccid').html($('#pastAccid').val());
+        
+        $('#pRateHealth').html($('#rateHealth').val());
+        
+        $('#pReasonSeekTreat').html($('#reasonSeekTreat').val());
+        
+        $('#pExpectTreatment').html($('#expectTreatment').val());
+        
+        $('#pMentalHealthTreatment').html($('#mentalHealthTreatment').val());
 
         //--------------------------------------------------------
 
