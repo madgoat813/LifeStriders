@@ -176,7 +176,24 @@ and open the template in the editor.
 
                         <label for='medSec1'> 1) Please fill in all current medications you are taking: </label>
                         <div id='medSec1' class='formgroup'>
-                            <!-- Zach's table -->
+                            <div class="medication-group" id="medication-group">
+                        Please list all current medications you are taking
+                        <br>
+                        <div id="meds">
+                            <div class="input-group medication-1">
+                                <label for="medication-1-name">Medication</label>
+                                <input type="text" class="medication-name" id="medication-1-name">
+                                <label for="medication-1-prescriber">Prescribed By</label>
+                                <input type="text" class="medication-prescriber" id="medication-1-prescriber">
+                                <label for="medication-1-dosage">Dosage</label>
+                                <input type="text" class="medication-dosage" id="medication-1-dosage">
+                                <label for="medication-1-duration">Taken How Long?</label>
+                                <input type="text" class="medication-duration" id="medication-1-duration">
+                               </div>
+                            </div>
+                        <br>
+                        <button type="button" id="add-medication" value="add">More</button>
+                        </div>
 
                         </div>
 
