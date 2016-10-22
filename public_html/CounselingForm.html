@@ -170,7 +170,7 @@ and open the template in the editor.
                         </div>
 
                         <br>
-                       <hr class="divider">
+                        <hr class="divider">
 
                         <h3 class="text-center"> Medical Form</h3>
 
@@ -305,10 +305,10 @@ and open the template in the editor.
                         <br>
                         <br>
 
-                      
+
 
                         <br>
-                         <hr class="divider">
+                        <hr class="divider">
 
                         <input type="button" id="printPreviewButton" class="btn btn-danger" value="Submit">
                     </form>
@@ -336,7 +336,7 @@ and open the template in the editor.
                                     Fax: 866.404.3105 <br>
                                     counseling@lifestriders.org <br>
 
-                                     <br>
+                                    <br>
 
                                     Sll W29667 Summit Avenue (US HWY 18) <br>
                                     Waukesha, WI 53188 <br>
@@ -353,61 +353,127 @@ and open the template in the editor.
 
                             <h3 class="text-center">Client Information Form</h3>
 
-                            <!--  add labels not in js doc   -->
+                            <!-- add div with margin left? -->
+                            <div id="clientInformationPrintDiv" class="container">
                             <label for="printPreviewTD">Todays Date: </label>
-                            <p id="printPreviewTD"></p>
-                            <label for="printPreviewFN">First Name: </label>
-                            <p id="printPreviewFN"></p>
-                            <label for="printPreviewLN">Last Name: </label>
-                            <p id="printPreviewLN"></p>
-                            <label for="printPreviewBD">Birth Date: </label>
-                            <p id="printPreviewBD"></p>
-                            <label for="printPreviewSX">Sex: </label>
-                            <p id="printPreviewSX"></p>
-                            <label for="printPreviewMS">Marital Status: </label>
-                            <p id="printPreviewMS"></p>
+                            <p class="underlineSP" id="printPreviewTD"></p>
+
+                            <ul class="list-inline  text-center  listRow">
+                                <li class="text-center " >
+                                    <label for="printPreviewFN">First Name: </label>
+                                    <p  id="printPreviewFN"></p>
+                                </li>
+                                <li class="text-center">
+                                    <label for="printPreviewLN">Last Name: </label>
+                                    <p id="printPreviewLN"></p>
+                                </li>
+                                <li class="text-center">
+                                    <label for="printPreviewBD">Birth Date: </label>
+                                    <p id="printPreviewBD"></p>
+                                </li>
+                                <li class="text-center ">
+                                    <label for="printPreviewSX">Sex: </label>
+                                    <p id="printPreviewSX"></p>
+                                </li>
+                                <li class="text-center">
+                                    <label for="printPreviewMS">Marital Status: </label>
+                                    <p id="printPreviewMS"></p>
+                                </li>
+                            </ul>
 
 
-                            <label for="pAddress">Address: </label>
-                            <p id="pAddress"> </p>
-                            <label for="pCity"> City: </label>
-                            <p id="pCity"> </p>
-                            <label for="pState"> State: </label>
-                            <p id="pState"> </p>
-                            <label for="pZipCode"> Zip Code: </label>
-                            <p id="pZipCode"> </p>
+                            <ul class="list-inline text-center listRow2">
+                                <li class="text-center">
+                                    <label for="pAddress">Address: </label>
+                                    <p class="underline" id="pAddress"> </p> 
+                                </li>
+                                <li class="text-center">
+                                    <label for="pCity"> City: </label>
+                                    <p class="underline" id="pCity"> </p>
+                                </li>
+                                <li class="text-center">
+                                    <label for="pState"> State: </label>
+                                    <p class="underline" id="pState"> </p>
+                                </li>
+                                <li class="text-center">
+                                    <label for="pZipCode"> Zip Code: </label>
+                                    <p class="underline" id="pZipCode"> </p>
+                                </li>
 
-                            <label for="pHomePhone"> Home Phone #: </label>
-                            <p id="pHomePhone"> </p>
-                            <label for="pMyEmail"> My Email: </label>
-                            <p id="pMyEmail"> </p>
-                            <label for="pWorkPhone"> Work Phone #: </label>
-                            <p id="pWorkPhone"> </p>
-                            <label for="pCellPhone"> Cell Phone #: </label>
-                            <p id="pCellPhone"> </p>
+                            </ul>
 
-                            <label for="pEmployersName"> Employer's Name: </label>
-                            <p id="pEmployersName"> </p>
-                            <label for="pSocSecNum"> Your SSN: </label>
-                            <p id="pSocSecNum"> </p>
+                            <ul class="list-inline text-center listRow3">
+                                <li class="text-center">
+                                    <label for="pHomePhone"> Home Phone #: </label>
+                                    <p class="underline" id="pHomePhone"> </p>
+                                </li>
+                                <li class="text-center">
+                                    <label for="pMyEmail"> My Email: </label>
+                                    <p class="underline" id="pMyEmail"> </p>
+                                </li>
+                                <li class="text-center">
+                                    <label for="pWorkPhone"> Work Phone #: </label>
+                                    <p class="underline" id="pWorkPhone"> </p>
+                                </li>
+                                <li class="text-center">
+                                    <label for="pCellPhone"> Cell Phone #: </label>
+                                    <p class="underline" id="pCellPhone"> </p>
+                                </li>
+
+                            </ul>
+
+                            <ul class="list-inline text-center listRow4">
+                                <li class="text-center">
+                                    <label for="pEmployersName"> Employer's Name: </label>
+                                    <p class="underline" id="pEmployersName"> </p>
+                                </li>
+                                <li class="text-center">
+                                    <label for="pSocSecNum"> Your SSN: </label>
+                                    <p class="underline" id="pSocSecNum"> </p>
+                                </li>
+                            </ul>
+
+                            <ul class="list-inline text-center listRow5">
+                                <li class="text-center">
+                                    <label for="pParentName"> If Minor: Parents Name </label>
+                                    <p class="underline" id="pParentName"> </p> 
+                                </li>
+                                <li class="text-center">
+                                    <label for="pHisHerDOB"> His / Her DOB: </label>
+                                    <p class="underline" id="pHisHerDOB"> </p>
+                                </li>
+                                <li class="text-center">
+                                    <label for="pHisHerSSN"> His / Her SSN: </label>
+                                    <p class="underline" id="pHisHerSSN"> </p>
+                                </li>
+                            </ul>
+
+                            <ul class="list-inline text-center listRow6">
+                                <li class="text-center">
+                                    <label for="pEmerCon"> Emergency Contract: </label>
+                                    <p class="underline" id="pEmerCon"> </p>
+                                </li>
+
+                                <li class="text-center">
+                                    <label for="pEmerRel"> Relationship: </label>
+                                    <p class="underline" id="pEmerRel"> </p>
+                                </li>
+
+                                <li class="text-center">
+                                    <label for="pEmerPhone"> Phone #: </label>
+                                    <p class="underline" id="pEmerPhone"> </p>
+                                </li>
+
+                            </ul>
 
 
-                            <label for="pParentName"> If Minor: Parents Name </label>
-                            <p id="pParentName"> </p>
-                            <label for="pHisHerDOB"> His / Her DOB: </label>
-                            <p id="pHisHerDOB"> </p>
-                            <label for="pHisHerSSN"> His / Her SSN: </label>
-                            <p id="pHisHerSSN"> </p>
 
-                            <label for="pEmerCon"> Emergency Contract: </label>
-                            <p id="pEmerCon"> </p>
-                            <label for="pEmerRel"> Relationship: </label>
-                            <p id="pEmerRel"> </p>
-                            <label for="pEmerPhone"> Phone #: </label>
-                            <p id="pEmerPhone"> </p>
 
                             <label for="pHearAbout"> How did you hear about Lifestriders? </label>
                             <p id="pHearAbout"> </p>
+                            
+                            </div>
+                            
 
                             <br>
                             <hr>
@@ -417,54 +483,79 @@ and open the template in the editor.
                             <label for='pMedSec1'> 1) All current medications you are taking: </label>
                             <!-- Zach's table -->
 
-                            <p></p>
+                            <p class='leftIndent' ></p>
+                                
+                                <br>
 
                             <label for='pMedSec2'> 2) Allergy (Medication): </label>
-                            <p id="pAllegMed"> </p>
+                            <p class='leftIndent'  id="pAllegMed"> </p>
+                            
+                                <br>
 
                             <label for='pCurrentCare'> 3) Currently under a physicians's care? </label>
-                            <p id="pCurrentCare"> </p>
+                            <p class='leftIndent2' id="pCurrentCare"> </p>
 
-                            <label for='pCurrentName'> Name: </label>
-                            <p id="pCurrentName"> </p>
-                            <label for='pCurrentDateSeen'> Date Last Seen: </label>
-                            <p id="pCurrentDateSeen"> </p>
-                            <label for='pCurrentProblem'> Problem: </label>
-                            <p id="pCurrentProblem"> </p>
+                            <label for='pCurrentName' class='leftIndent' > Name: </label>
+                            <p id="pCurrentName" class='leftIndent' > </p>
+                            <label for='pCurrentDateSeen' class='leftIndent' > Date Last Seen: </label>
+                            <p id="pCurrentDateSeen" class='leftIndent' > </p>
+                            <label for='pCurrentProblem' class='leftIndent' > Problem: </label>
+                            <p id="pCurrentProblem" class='leftIndent' > </p>
 
+                            
+                                <br>
+                            
                             <label for='pMedDocName'> 4) Medical Doctor: </label>
-                            <p id="pMedDocName"> </p>
-                            <label for='pMedDocPhone'> Phone: </label>
-                            <p id="pMedDocPhone"> </p>
-                            <label for='pMedDocDate'> Date of Last Physical Exam: </label>
-                            <p id="pMedDocDate"> </p>
+                            <p class='leftIndent2' id="pMedDocName"> </p>
+                            <label for='pMedDocPhone' class='leftIndent' > Phone: </label>
+                            <p id="pMedDocPhone" class='leftIndent' > </p>
+                            <label for='pMedDocDate' class='leftIndent' > Date of Last Physical Exam: </label>
+                            <p id="pMedDocDate" class='leftIndent' > </p>
+                            
+                                <br>
 
                             <label for='medSec5'> 5) Current Medical Conditions: </label>
-                            <p></p>
+                            <p class='leftIndent' ></p>
+                            
+                                <br>
 
                             <label for='pSigMedProb'> 6) Significant Medical Problems: </label>
-                            <p id='pSigMedProb'></p>
+                            <p class='leftIndent'  id='pSigMedProb'></p>
+                            
+                                <br>
 
                             <label for='pPastSurg'> 7) Past Surgery: </label>
-                            <p id='pPastSurg'></p>
+                            <p class='leftIndent'  id='pPastSurg'></p>
+                            
+                                <br>
 
                             <label for='pPastAccid'> 8) Past Accidents: </label>
-                            <p id='pPastAccid'></p>
+                            <p  class='leftIndent' id='pPastAccid'></p>
+                            
+                                <br>
 
                             <label for='pRateHealth'> 9) Physical Health Rating: </label>
-                            <p id='pRateHealth'></p>
+                            <p  class='leftIndent2' id='pRateHealth'></p>
+                            
+                            <br>
 
                             <label for='pReasonSeekTreat'> 10) Reasons for Seeking Treatment: </label>
-                            <p id='pReasonSeekTreat'></p>
+                            <p class='leftIndent'  id='pReasonSeekTreat'></p>
+                            
+                                <br>
 
                             <label for='pExpectTreatment'> 11) Results from Treatment Expected: </label>
-                            <p id='pExpectTreatment'></p>
+                            <p  class='leftIndent' id='pExpectTreatment'></p>
+                            
+                                <br>
 
                             <label for='pMentalHealthTreatment'> 12) Mental Health Treatment Past:  </label>
-                            <p id='pMentalHealthTreatment'></p>
+                            <p  class='leftIndent' id='pMentalHealthTreatment'></p>
+                            
+                                <br>
 
                             <label for='pSec13'> 13) Issues seeking affection:  </label>
-                            <p id='pSec13'></p>
+                            <p  class='leftIndent' id='pSec13'></p>
 
 
                             <br>
@@ -478,12 +569,21 @@ and open the template in the editor.
                                 of the treatments or anything else about your care, please don't hesitate to ask.</p>
 
                             <p class="boldSpan">I understand and agree to all the above information.</p>
-
-                             <hr class="divider">
+                            
                             <br>
                             
+                            <hr id="signHr1" class="divider">
+                            <label for='signHr1'> Client (or Parent/Guardian) Name Printed &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date </label> 
                             
+                            <br><br>
                             
+                            <hr id="signHr2" class="divider">
+                            <label for='signHr2'> Client Signature: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date </label> 
+                            
+                            <br>
+                            <br>
+
+
                         </div>
 
                         <input class="btn btn-danger" type="submit" id="printButton" value="Submit for Print Preview">
