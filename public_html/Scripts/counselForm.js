@@ -30,9 +30,14 @@ $(document).ready(function (e) {
         $('#pEmployersName').html($('#employerName').val());
         $('#pSocSecNum').html($('#socSecNum').val());
 
-        $('#pParentName').html($('#parentName').val());
-        $('#pHisHerDOB').html($('#hisherDOB').val());
-        $('#pHisHerSSN').html($('#hisherSSN').val());
+
+        if ($('#parentName').val().length === 0 || $('#hisherDOB').val().length === 0 || $('#hisherSSN').val().length === 0) {
+            $('.listRow5').hide();
+        } else {
+            $('#pParentName').html($('#parentName').val());
+            $('#pHisHerDOB').html($('#hisherDOB').val());
+            $('#pHisHerSSN').html($('#hisherSSN').val());
+        }
 
         $('#pEmerCon').html($('#emerCon').val());
         $('#pEmerRel').html($('#emerRelation').val());
@@ -50,19 +55,19 @@ $(document).ready(function (e) {
         $('#pMedDocName').html($('#medDoctorName').val());
         $('#pMedDocPhone').html($('#medDocPhone').val());
         $('#pMedDocDate').html($('#medDocDate').val());
-        
+
         $('#pSigMedProb').html($('#sigMedProb').val());
 
         $('#pPastSurg').html($('#pastSurg').val());
-        
+
         $('#pPastAccid').html($('#pastAccid').val());
-        
+
         $('#pRateHealth').html($('#rateHealth').val());
-        
+
         $('#pReasonSeekTreat').html($('#reasonSeekTreat').val());
-        
+
         $('#pExpectTreatment').html($('#expectTreatment').val());
-        
+
         $('#pMentalHealthTreatment').html($('#mentalHealthTreatment').val());
 
         //--------------------------------------------------------
